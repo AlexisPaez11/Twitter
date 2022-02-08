@@ -1,0 +1,435 @@
+.feed {
+    /* background-color: tomato; */
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    font-size: 20px;
+}
+
+/* feed-block-1 */
+.feed-block-1 {
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 15px;
+    border-inline: 1.5px solid var(--border);
+    border-bottom: 1.5px solid var(--border);
+}
+
+.feed-block-1 .text {
+    color: var(--t-primary);
+    font: var(--body-16medium);
+    font-size: 20px;
+    width: 100%;
+    margin: auto;
+}
+
+.icon-container {
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+}
+.icon-container:hover {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(29, 161, 242, 0.1);
+}
+/* feed-block-1 */
+
+
+
+/* feed-block-2 */
+.feed-block-2 {
+    padding: 10px 15px;
+    height: 98px;
+    border-inline: 1.5px solid var(--border);
+    border-bottom: 1.5px solid var(--border);
+}
+
+.post-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.post-left {
+    width: 48px;
+    margin-right: 12px;
+}
+
+.profilePicture-cover {
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.profilePicture-cover img {
+    width: 48px;
+    height: 48px;
+}
+
+
+.post-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-right .input-placeholder-text {
+    padding: 0px;
+    margin-block: 12px 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    min-width: 0px;
+    appearance: none;
+    color: var(--t-gray);
+    font: var(--body-16regular);
+    font-size: 20px;
+}
+
+.post-actions-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 506px;
+}
+
+.post-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    transform: translateX(-8px);
+}
+
+.post-actions-padding {
+    padding: 8px;
+    border-radius: 50%;
+}
+.post-actions-padding:hover {
+    background-color: rgb(29, 161, 242, 0.1);
+    cursor: pointer;
+}
+
+.post-actions svg {
+    display: flex;
+    flex-direction: row;
+    width: 22px;
+    height: 22px;
+}
+
+.post-tweet-actions {
+    height: 34px;
+    padding-inline: 20px;
+    border-radius: 10000px;
+    background-color: var(--blue);
+}
+
+.post-tweet-actions:hover {
+    cursor: pointer;
+}
+
+.post-tweet-actions .text{
+    height: 34px;
+    display: flex;
+    align-items: center;
+    background-color: var(--blue);
+    color: var(--white);
+    font: var(--body-16medium);
+    font-size: 15px;
+}
+/* feed-block-2 */
+
+
+/* feed-block-3 */
+.feed-block-3 {
+    padding: 10px 15px;
+    border-inline: 1.5px solid var(--border);
+    border-bottom: 1.5px solid var(--border);
+}
+
+.tweet-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.tweet-left {
+    width: 48px;
+    margin-right: 12px;
+}
+
+.tweet-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+    width: 506px;
+}
+
+.tweet-user-container {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.tweet-name {
+    color: var(--t-primary);
+    font: var(--body-16medium);
+    font-size: 15px;
+}
+.tweet-user {
+    color: var(--t-gray);
+    font: var(--body-16regular);
+    font-size: 15px;
+}
+.tweet-· {
+    color: var(--t-gray);
+    font: var(--body-16regular);
+    font-size: 15px;
+}
+.tweet-time {
+    color: var(--t-gray);
+    font: var(--body-16regular);
+    font-size: 15px;
+}
+
+.tweet-content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet-content-container .text {
+    color: var(--t-primary);
+    font: var(--body-16regular);
+    font-size: 15px;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.tweet-media-cover {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    border-radius: 16px;
+    margin-block: 10px 5px;
+    max-height: 400px;
+}
+.tweet-media-cover img {
+    width: 506px;
+    max-height: 350px;
+}
+
+.tweet-actions-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tweet-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    /* justify-content: space-between; */
+    /* transform: translateX(-8px); */
+}
+
+.tweet-actions-padding {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    /* background-color: red; */
+}
+
+.tweet-actions svg {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.comment-default svg path, .retweet-default svg path, .share-default svg path {
+    fill: var(--t-gray);
+}
+
+.comment-default .number, .retweet-default .number, .like-selected .number {
+    color: var(--t-gray);
+    font: var(--body-16regular);
+    font-size: 13px;
+}
+.retweet-default .number {
+    color: var(--t-gray);
+}
+.like-selected .number {
+    color: var(--red);
+}
+
+/* comment hover */
+.comment-default:hover {
+    cursor: pointer;
+}
+.comment-default:hover svg, .retweet-selected:hover svg {
+    background-color: rgb(29, 161, 242, 0.1);
+}
+.comment-default:hover svg path {
+    fill: var(--blue);
+}
+.comment-default:hover .number {
+    color: var(--blue);
+}
+
+/* retweet hover */
+.retweet-default:hover, .retweet-default:hover {
+    cursor: pointer;
+}
+.retweet-default:hover svg, .retweet-selected:hover svg {
+    background-color: rgb(0, 186, 124, 0.1);
+}
+.retweet-default:hover svg path {
+    fill: var(--green);
+}
+.retweet-default:hover .number {
+    color: var(--green);
+}
+
+/* like hover */
+.like-default:hover, .like-selected:hover {
+    cursor: pointer;
+}
+.like-default:hover svg, .like-selected:hover svg {
+    background-color: rgb(244, 36, 94, 0.1);
+}
+.like-default:hover svg path {
+    fill: var(--red);
+}
+.like-default:hover .number {
+    color: var(--red);
+}
+
+/* share hover */
+.share-default:hover, .share-selected:hover {
+    cursor: pointer;
+}
+.share-default:hover svg, .share-selected:hover svg {
+    background-color: rgb(29, 161, 242, 0.1);
+}
+.share-default:hover svg path {
+    fill: var(--blue);
+}
+.share-default:hover .number {
+    color: var(--blue);
+}
+
+/* feed-block-3 */
+
+@media only screen and (max-width: 600px) {
+    main {
+        width: 100%;
+    }
+
+    .feed-block-1 {
+        border-inline: 1.5px transparent;
+    }
+    
+    .feed-block-1 .text {
+        font-size: 16px;
+    }
+    .icon-container {
+        width: 16px;
+        height: 16px;
+        padding: 8px;
+    }
+    .icon-container:hover {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .feed-block-2 {
+        display: none;
+    }
+
+    .feed-block-3 {
+        border-inline: none;
+    }
+    
+    .tweet-left {
+        width: 43.2px;
+        margin-right: 10.8px;
+    }
+
+    .profilePicture-cover, .profilePicture-cover img {
+        width: 43.2px;
+        height: 43.2px;
+    }
+    
+    .tweet-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3.6px;
+        width: 455.4px;
+    }
+    
+    .tweet-user-container {
+        display: flex;
+        flex-direction: row;
+        gap: 5.4px;
+    }
+    
+    .tweet-name, .tweet-user, .tweet-·, .tweet-time, .tweet-content-container .text {
+        font-size: 13.5px;
+    }
+    
+    .tweet-media-cover {
+        border-radius: 14.4px;
+        -webkit-border-radius: 14.4px;
+        -moz-border-radius: 14.4px;
+        -ms-border-radius: 14.4px;
+        -o-border-radius: 14.4px;
+        margin-block: 9px 4.5px;
+}
+    .tweet-media-cover img {
+        width: 455.4px;
+    }
+    
+    .tweet-actions {
+        gap: 63px;
+    }
+    
+    .tweet-actions-padding {
+        gap: 3.6px;
+    }
+    
+    .tweet-actions svg {
+        padding: 7.2px;
+    }
+    .comment-default .number, .retweet-default .number, .like-selected .number {
+        font-size: 11.7px;
+    } 
+
+    ::-webkit-scrollbar {
+        inline-size: 0rem;
+      }
+    
+      ::-webkit-scrollbar-thumb {
+        inline-size: 0rem;
+      }
+      ::-webkit-scrollbar-button {
+        inline-size: 0rem;
+        block-size: 0rem;
+      }
+}

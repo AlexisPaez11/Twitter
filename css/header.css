@@ -1,0 +1,217 @@
+nav {
+    height: 100%;
+    /* background-color: thistle; */
+}
+.side-menu-container {
+    height: 100%;
+    padding: 0 15px;
+    /* background-color: violet; */
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: turquoise; */
+    height: 100%;
+    gap: 20px;
+}
+
+.side-menu-top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-block: 15px 0px;
+}
+
+.side-menu-logo-cover svg path {
+    fill: #1DA1F2;
+}
+
+.side-menu-bottom {
+    display: flex;
+    flex-direction: column;
+    margin-block: 0px 20px;
+}
+
+.side-menu-logo {
+    display: flex;
+    align-items: bottom;
+}
+.side-menu-logo-cover {
+    overflow: hidden;
+    object-fit: cover;
+    width: 28.38px;
+    height: 23.07;
+}
+.side-menu-logo-cover svg {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.side-menu-itemList {
+    display: flex;
+    flex-direction: column;
+    /* background-color: tomato; */
+    gap: 5px;
+}
+.side-menu-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.side-menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transform: translateX(-12px);
+    padding: 6px 12px;
+    border-radius: 10000px;
+}
+
+header svg path {
+    fill: var(--header-icon);
+}
+
+.side-menu-item:hover {
+    background-color: rgb(136, 153, 166, 0.1);
+    cursor: pointer;
+}
+
+.side-menu-item-text {
+    padding-inline: 16px 16px;
+    color: var(--t-primary);
+    font: var(--body-16medium);
+    font-size: 19px;
+}
+
+.selected path {
+    fill: var(--blue);
+}
+
+.text.selected{
+    color: var(--blue);
+}
+
+.side-menu-tweet-actions {
+    height: 49px;
+    border-radius: 10000px;
+    background-color: var(--blue);
+}
+
+.side-menu-tweet-actions:hover {
+    cursor: pointer;
+}
+
+.side-menu-tweet-actions .text {
+    display: flex;
+    height: 49px;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font: var(--body-16medium);
+    font-size: 15px;
+}
+
+/* .side-menu-profile-container {
+} */
+
+.side-menu-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side-menu-profile-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.side-menu-profilePicture {
+    width: 48px;
+    height: 48px;
+}
+
+.side-menu-profilePicture-cover {
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.side-menu-profilePicture-cover img {
+    width: 48px;
+    height: 48px;
+}
+
+.side-menu-profile-name {
+    color: var(--t-primary);
+    font: var(--body-16medium);
+    font-size: 16px;
+}
+
+.side-menu-profile-user {
+    color: var(--dark6);
+    font: var(--body-16regular);
+    font-size: 16px;
+}
+
+.side-menu-profilePicture-cover:hover, .side-menu-profile-name:hover, .side-menu-profile-user:hover, .side-menu-profile-icon:hover {
+    cursor: pointer;
+}
+
+.side-menu-profile-icon {
+    height: 24px;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.side-menu-profile-icon:hover {
+    background-color:   rgb(136, 153, 166, 0.1);;
+}
+
+@media only screen and (max-width: 1250px) {
+    .side-menu-item-text, .side-menu-tweet-actions, .side-menu-profile-user-container, .side-menu-profile-right {
+        display: none;
+    }
+    
+    .side-menu-logo {
+        justify-content: right;
+    }
+    
+    .side-menu-logo-cover {
+        padding-inline: 12px;
+    }
+    
+    
+    
+    .side-menu-item-container  {
+        justify-content: right;
+    }
+    .side-menu-item {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+    
+    .side-menu-profile {
+        flex-direction: row;
+        justify-content: right;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    header {
+        display: none;
+    }
+}
