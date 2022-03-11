@@ -1,5 +1,6 @@
 @import url(css/header.css);
 @import url(css/feed.css);
+@import url(css/profile.css);
 @import url(css/sidebar-column.css);
 
 :root {
@@ -22,6 +23,7 @@
     --t-gray: #5B7083;
     --border: #EBEEF0;
     --bg-color: #FFFFFF;
+    --bg-hover:  rgb(136, 153, 166, .25);
     --container-bg-color: #F7F9FA;
     --sidebar-column-hover: #EBEEF0;
     --scroll: #EBEEF0;
@@ -35,6 +37,10 @@
     --body-16regular: 400 1rem/1.25rem Roboto; 
     --body-16regular_u: 400 1rem/1.125rem Roboto; 
     --caption-12bold: 700 0.75rem/1rem Roboto;
+}
+
+::selection {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body {
@@ -63,6 +69,21 @@ main {
     gap: 15px;
 }
 
+.feed {
+    height: max-content;
+    border-inline: 1.5px solid var(--border);
+}
+
+.feed-block-1, .profile-block-1 {
+    border-bottom: 1.5px solid var(--border);
+}
+.feed-block-2, .profile-block-2 {
+    border-bottom: 1.5px solid var(--border);
+}
+.feed-block-3, .profile-block-3 {
+    border-bottom: 1.5px solid var(--border);
+}
+
 a {
     text-decoration: none;
 }
@@ -70,32 +91,31 @@ a {
 ::-webkit-scrollbar {
     inline-size: 1rem;
     background: transparent;
-  }
+}
 
   ::-webkit-scrollbar-thumb {
     inline-size: 1rem;
     background-color: var(--scroll);
-  }
+}
   ::-webkit-scrollbar-button {
     inline-size: 0rem;
     block-size: 0rem;
     background: none;
-  }
+}
 
 @media only screen and (max-width: 1250px) {
-
     header {
         width: 80px;
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    
     :root {
         --t-gray: #8899A6;
         --t-primary: #FFFFFF;
         --border: #3A444C;
         --bg-color: #17202A;
+        --bg-hover: #283340;
         --container-bg-color: #283340;
         --sidebar-column-hover: rgb(58, 68, 76, 0.5);
         --scroll: #3A444C;
