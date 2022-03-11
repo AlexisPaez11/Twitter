@@ -1,4 +1,5 @@
 nav {
+    position: fixed;
     height: 100%;
     /* background-color: thistle; */
 }
@@ -168,17 +169,21 @@ header svg path {
     cursor: pointer;
 }
 
+.side-menu-profile-right {
+    padding-left: 10px;
+}
+
 .side-menu-profile-icon {
     height: 24px;
     border-radius: 50%;
-    padding: 4px;
 }
 
 .side-menu-profile-icon:hover {
-    background-color:   rgb(136, 153, 166, 0.1);;
+    background-color: rgb(136, 153, 166, 0.1);
 }
 
 @media only screen and (max-width: 1250px) {
+
     .side-menu-item-text, .side-menu-tweet-actions, .side-menu-profile-user-container, .side-menu-profile-right {
         display: none;
     }
@@ -190,8 +195,6 @@ header svg path {
     .side-menu-logo-cover {
         padding-inline: 12px;
     }
-    
-    
     
     .side-menu-item-container  {
         justify-content: right;
