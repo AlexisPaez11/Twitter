@@ -39,7 +39,13 @@
     --caption-12bold: 700 0.75rem/1rem Roboto;
 }
 
-::selection {
+.side-menu-item-text .text::selection, .side-menu-profile-name::selection, .side-menu-profile-user::selection,
+
+.feed-block-1 .text::selection, .number::selection, .interaction-text::selection , .tweet-·::selection, .tweet-time::selection,
+
+.sidebar-column-news-start .text::selection,.text-tittle::selection, .text-number::selection, .text-·::selection, .text-topic::selection, .text-date::selection, .text-tweets-numbers::selection, .sidebar-column-news-end .text::selection, .sidebar-column-follow-start .text::selection, .sidebar-column-follow-actions .text::selection, .sidebar-column-follow-end .text::selection, .sidebar-column-information::selection, 
+
+div::selection, img::selection, br::selection {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
